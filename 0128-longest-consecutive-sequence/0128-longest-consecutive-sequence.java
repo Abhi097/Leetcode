@@ -10,10 +10,10 @@ class Solution {
              int currentSeq=1;
                 int currentnum=num;
                 while(set.contains(currentnum+1)){
-                    currentSeq+=1;
+                    currentSeq++;
                     currentnum+=1;
                 }
-                longest=Math.max(currentSeq,longest);
+                if(currentSeq>longest)longest=currentSeq;
                 
             }
         }
